@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns = "http://www.w3.org/ns/widgets"
+    xmlns:gap = "http://phonegap.com/ns/1.0"
+	xmlns:rim="http://www.blackberry.com/ns/widgets"
+    id        = "com.phonegap.example"
+    version   = "1.0.0">
+
+
+<name>Calculator Demo</name>
+<preference name="disable-cursor" value="true" />
+ <rim:navigation mode="focus"/>
+ <feature id="blackberry.ui.dialog"/>
+<icon src="icon.png" width="100px" height="100px" />
+<gap:splash src="splash.png" />
+<gap:splash src="splash.png" gap:platform="blackberry" />
+<description>
+A simple PhoneGap Build application.
+</description>
+
+<author href="https://example.com" email="you@example.com">
+Samin Yasar
+</author>
+</widget>
+
+

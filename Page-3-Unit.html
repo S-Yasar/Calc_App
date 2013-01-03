@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<link rel="stylesheet" href="MinDark.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile.structure-1.2.0.min.css" /> 
+<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+<body>
+<style>
+table {table-layout:fixed}
+td {width:25%}
+</style>
+<div id="p" data-role="page" data-theme="a">
+
+<div data-role="header">
+<a href="index.html" data-iconpos="notext" data-transition="slide" data-direction="reverse" data-role="button" data-icon="home" data-iconpos="right">Home</a>
+<h4 style="text-transform:uppercase">Unit-Conversion Calculator</h4>
+</div>
+
+<div data-role="content">
+<form name="con">
+<input type="text" name= "cali" id="in1">
+<select name="inp">
+	<option value="cm">Centimeter</option>
+	<option value="m">Millimeter</option>
+    <option value="inch">Inch</option>
+    <option value="feet">Feet</option>
+</select>
+<input type="text" name= "calo" id="in2">
+<select name="outp">
+	<option value="cm">Centimeter</option>
+	<option value="m">Millimeter</option>
+    <option value="inch">Inch</option>
+    <option value="feet">Feet</option>
+</select>
+<input type="button" value="Convert" onclick="conv()" />
+</form>
+</div>
+</div>
+<script language="javascript" type="text/javascript">
+function conv(){
+if (con.inp.value == "cm" && con.outp.value == "inch"){
+	con.calo.value= 0.393701*con.cali.value;
+}
+}
+</script>
+</body>
+</html>
