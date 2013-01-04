@@ -11,7 +11,7 @@
  <rim:navigation mode="focus"/>
  <feature id="blackberry.ui.dialog"/>
 <icon src="icon.png" width="100px" height="100px" />
-<gap:splash src="Splash.html" />
+<gap:splash src="loader.gif" />
 <description>
 A simple PhoneGap Build application.
 </description>
