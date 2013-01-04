@@ -2,10 +2,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1;" />
- <!-- <link rel="stylesheet" href="MinBlue.css" />
+  <link rel="stylesheet" href="MinBlue.css" />
   <link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile.structure-1.2.0.min.css" /> 
   <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script> 
-  <script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>-->
+  <script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 </head>
 <body>
@@ -27,33 +27,33 @@ td {width:25%}
 	<td id="td1"><input type="text" name="cal" id="inbox"></td>
 </tr>
 <tr>
-	<td id="td2"><input type="button" value="="  onmousedown="equal()"></td>
+	<td id="td2"><input data-role="button" value="="  onmousedown="equal()"></td>
 </tr>
 </table>
 <table width="100%">
 <tr>
-	<td><input type="button" value="7" onclick="calcb.cal.value += '7'"></td>
-    <td><input type="button" value="8" onclick="calcb.cal.value += '8'"></td>
-    <td><input type="button" value="9" onclick="calcb.cal.value += '9'"></td>
-    <td><input type="button" value="+" onclick="calcb.cal.value += '+'"></td>
+	<td><input data-role="button" value="7" onclick="calcb.cal.value += '7'"></td>
+    <td><input data-role="button" value="8" onclick="calcb.cal.value += '8'"></td>
+    <td><input data-role="button" value="9" onclick="calcb.cal.value += '9'"></td>
+    <td><input data-role="button" value="+" onclick="calcb.cal.value += '+'"></td>
 </tr>
 <tr>
-	<td><input type="button" value="4" onclick="calcb.cal.value += '4'"></td>
-    <td><input type="button" value="5" onclick="calcb.cal.value += '5'"></td>
-    <td><input type="button" value="6" onclick="calcb.cal.value += '6'"></td>
-    <td><input type="button" value="-" onclick="calcb.cal.value += '-'"></td>
+	<td><input data-role="button" value="4" onclick="calcb.cal.value += '4'"></td>
+    <td><input data-role="button" value="5" onclick="calcb.cal.value += '5'"></td>
+    <td><input data-role="button" value="6" onclick="calcb.cal.value += '6'"></td>
+    <td><input data-role="button" value="-" onclick="calcb.cal.value += '-'"></td>
 </tr>
 <tr>
-	<td><input type="button" value="1" onclick="calcb.cal.value += '1'"></td>
-    <td><input type="button" value="2" onclick="calcb.cal.value += '2'"></td>
-    <td><input type="button" value="3" onclick="calcb.cal.value += '3'"></td>
-    <td><input type="button" value="x" onclick="calcb.cal.value += '*'"></td>
+	<td><input data-role="button" value="1" onclick="calcb.cal.value += '1'"></td>
+    <td><input data-role="button" value="2" onclick="calcb.cal.value += '2'"></td>
+    <td><input data-role="button" value="3" onclick="calcb.cal.value += '3'"></td>
+    <td><input data-role="button" value="x" onclick="calcb.cal.value += '*'"></td>
 </tr>
 <tr>
-	<td><input type="button" value="0" onclick="calcb.cal.value += '0'"></td>   
-    <td><input type="button" value="." onclick="calcb.cal.value += '.'"></td>
-    <td><input type="button" value="C" onclick="del()"></td>
-    <td><input type="button" value="÷" onclick="calcb.cal.value += '/'"></td>
+	<td><input data-role="button" value="0" onclick="calcb.cal.value += '0'"></td>   
+    <td><input data-role="button" value="." onclick="calcb.cal.value += '.'"></td>
+    <td><input data-role="button" value="C" onclick="del()"></td>
+    <td><input data-role="button" value="÷" onclick="calcb.cal.value += '/'"></td>
 </tr>
 </table>
 </form>
