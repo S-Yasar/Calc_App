@@ -28,7 +28,7 @@ td {width:25%}
 	<input type="text" name= "cal" id="inbox">
 </tr>
 <tr>
-	<input type="button" name="_E" value="=" onclick="ans()">
+	<input type="button" name="_E" value="=" onmousedown="ans()">
 </tr>
 </table>
 <table width="100%" height="100%">
@@ -37,28 +37,28 @@ td {width:25%}
     <td><input type="button" value="8" onclick="calc.cal.value += '8'"></td>
     <td><input type="button" value="9" onclick="calc.cal.value += '9'"></td>
     <td><input type="button" value="+" onclick="calc.cal.value += '+'"></td>
-    <td><input type="button" value="x²" onclick="c()"></td>
+    <td><input type="button" value="x²" onmousedown="c()"></td>
 </tr>
 <tr>
 	<td><input type="button" value="4" onclick="calc.cal.value += '4'"></td>
     <td><input type="button" value="5" onclick="calc.cal.value += '5'"></td>
     <td><input type="button" value="6" onclick="calc.cal.value += '6'"></td>
     <td><input type="button" value="-" onclick="calc.cal.value += '-'"></td>
-    <td><input type="button" value="%" onclick="p()"></td>
+    <td><input type="button" value="%" onmousedown="p()"></td>
 </tr>
 <tr>
 	<td><input type="button" value="1" onclick="calc.cal.value += '1'"></td>
     <td><input type="button" value="2" onclick="calc.cal.value += '2'"></td>
     <td><input type="button" value="3" onclick="calc.cal.value += '3'"></td>
     <td><input type="button" value="x" onclick="calc.cal.value += '*'"></td>
-    <td><input type="button" value="√" onclick="r()"></td>
+    <td><input type="button" value="√" onmousedown="r()"></td>
 </tr>
 <tr>
 	<td><input type="button" value="0" onclick="calc.cal.value += '0'"></td>   
     <td><input type="button" value="·" onclick="calc.cal.value += '.'"></td>
     <td><input type="button" value="C" onclick="del()"></td>
     <td><input type="button" value="÷" onclick="calc.cal.value += '/'"></td>
-    <td><input type="button" value="Pi" onclick="pi()"></td>
+    <td><input type="button" value="Pi" onmousedown="pi()"></td>
 </tr>
 </table>
 </form>
