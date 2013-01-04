@@ -3,10 +3,10 @@
     xmlns:gap = "http://phonegap.com/ns/1.0"
 	xmlns:rim="http://www.blackberry.com/ns/widgets"
     id        = "com.phonegap.example"
-    version   = "1.0.0">
+    version   = "0.9.9">
 
 
-<name>Calculator Demo</name>
+<name>Calculator: Beta</name>
 <preference name="disable-cursor" value="true" />
  <rim:navigation mode="focus"/>
  <feature id="blackberry.ui.dialog"/>
