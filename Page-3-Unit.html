@@ -17,24 +17,24 @@ td {width:25%}
 
 <div data-role="header">
 <a href="index.html" data-iconpos="notext" data-transition="slide" data-direction="reverse" data-role="button" data-icon="home" data-iconpos="right">Home</a>
-<h4 style="text-transform:uppercase">Unit-Conversion Calculator</h4>
+<h4 style="text-transform:uppercase">Unit</h4>
 </div>
 
 <div data-role="content">
 <form name="con">
 <input type="text" name= "cali" id="in1">
 <select name="inp">
-	<option value="cm">Centimeter</option>
-	<option value="m">Millimeter</option>
-    <option value="inch">Inch</option>
-    <option value="feet">Feet</option>
+	<option value="1">Centimeter</option>
+	<option value="100">Metre</option>
+    <option value="2.54">Inch</option>
+    <option value="30.48">Feet</option>
 </select>
 <input type="text" name= "calo" id="in2">
 <select name="outp">
-	<option value="cm">Centimeter</option>
-	<option value="m">Millimeter</option>
+    <option value="cm">Centimeter</option>
+	<option value="m">Metre</option>
     <option value="inch">Inch</option>
-    <option value="feet">Feet</option>
+    <option value="foot">Foot</option>
 </select>
 <input type="button" value="Convert" onmousedown="conv()" />
 </form>
@@ -42,9 +42,12 @@ td {width:25%}
 </div>
 <script language="javascript" type="text/javascript">
 function conv(){
-if (con.inp.value == "cm" && con.outp.value == "inch"){
-	con.calo.value= 0.393701*con.cali.value;
-}
+var ccm= con.inp.value*con.in1.value
+
+if (con.outp.value== "cm"){con.in2.value= ccm*1;}
+else if (con.outp.value== "m"){con.in2.value= ccm/100;}
+else if (con.outp.value== "inch"){con.in2.value= ccm*0.393701;}
+else if (con.outp.value== "foot"){con.in2.value= ccm*0.0328084;}
 }
 </script>
 </body>

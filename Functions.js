@@ -1,3 +1,4 @@
+//Regular Calculations 
 function ans(){
 	calc.cal.value = eval(calc.cal.value);
 }
@@ -15,4 +16,13 @@ function r(){
 }
 function pi(){
 	calc.cal.value= Math.PI*calc.cal.value	
+}
+
+//Conversion Calculation 
+function conv(){
+var ccm= con.inp.value*con.in1.value
+if (con.outp.value== "cm"){con.in2.value= ccm*1;}
+else if (con.outp.value== "m"){con.in2.value= ccm/100;}
+else if (con.outp.value== "inch"){con.in2.value= ccm*0.393701;}
+else if (con.outp.value== "foot"){con.in2.value= ccm*0.0328084;}
 }
