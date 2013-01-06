@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
- <meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes;" />
   <link rel="stylesheet" href="MinBlue.css" />
   <link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile.structure-1.2.0.min.css" /> 
   <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script> 
@@ -12,53 +12,56 @@
 <body>
 <style>
 table {table-layout:fixed}
-td {width:25%}
+td {width:20%}
+#td1 {width:75%}
+#td2 {width:25%}
 </style>
 <div id="p" data-role="page" data-theme="a">
 
 <div data-role="header">
 <a href="index.html" data-iconpos="notext" data-transition="slide" data-direction="reverse" data-role="button" data-icon="home" data-iconpos="right">Home</a>
+<a href="Info-Page.html" data-iconpos="notext" data-transition="slide" data-role="button" data-icon="info" data-iconpos="left">Info</a>
 <h4 style="text-transform:uppercase">Basic+</h4>
 </div>
 
 <div data-role="content">
 <form name="calc">
-<table>
+<table width="100%">
 <tr>
-	<input type="text" name= "cal" id="inbox">
+	<td id="td1"><input style="width:100%" type="text" name= "cal" id="inbox"></td>
 </tr>
 <tr>
-	<input type="button" name="_E" value="=" onmousedown="ans()">
+	<td id="td2"><input style="width:100%" type="button" name="_E" value="=" onmousedown="ans()"></
 </tr>
 </table>
-<table width="100%" height="100%">
+<table width="100%">
 <tr>
-	<td><input type="button" value="7" onclick="calc.cal.value += '7'"></td>
-    <td><input type="button" value="8" onclick="calc.cal.value += '8'"></td>
-    <td><input type="button" value="9" onclick="calc.cal.value += '9'"></td>
-    <td><input type="button" value="+" onclick="calc.cal.value += '+'"></td>
-    <td><input type="button" value="x²" onmousedown="c()"></td>
+	<td><input style="width:100%" type="button" value="7" onclick="calc.cal.value += '7'"></td>
+   <td><input style="width:100%" type="button" value="8" onclick="calc.cal.value += '8'"></td>
+   <td><input style="width:100%" type="button" value="9" onclick="calc.cal.value += '9'"></td>
+   <td><input style="width:100%" type="button" value="+" onclick="calc.cal.value += '+'"></td>
+   <td><input style="width:100%" type="button" value="x²" onmousedown="c()"></td>
 </tr>
 <tr>
-	<td><input type="button" value="4" onclick="calc.cal.value += '4'"></td>
-    <td><input type="button" value="5" onclick="calc.cal.value += '5'"></td>
-    <td><input type="button" value="6" onclick="calc.cal.value += '6'"></td>
-    <td><input type="button" value="-" onclick="calc.cal.value += '-'"></td>
-    <td><input type="button" value="%" onmousedown="p()"></td>
+	<td><input style="width:100%" type="button" value="4" onclick="calc.cal.value += '4'"></td>
+   <td><input style="width:100%" type="button" value="5" onclick="calc.cal.value += '5'"></td>
+   <td><input style="width:100%" type="button" value="6" onclick="calc.cal.value += '6'"></td>
+   <td><input style="width:100%" type="button" value="-" onclick="calc.cal.value += '-'"></td>
+   <td><input style="width:100%" type="button" value="%" onmousedown="p()"></td>
 </tr>
 <tr>
-	<td><input type="button" value="1" onclick="calc.cal.value += '1'"></td>
-    <td><input type="button" value="2" onclick="calc.cal.value += '2'"></td>
-    <td><input type="button" value="3" onclick="calc.cal.value += '3'"></td>
-    <td><input type="button" value="x" onclick="calc.cal.value += '*'"></td>
-    <td><input type="button" value="√" onmousedown="r()"></td>
+	<td><input style="width:100%" type="button" value="1" onclick="calc.cal.value += '1'"></td>
+   <td><input style="width:100%" type="button" value="2" onclick="calc.cal.value += '2'"></td>
+   <td><input style="width:100%" type="button" value="3" onclick="calc.cal.value += '3'"></td>
+   <td><input style="width:100%" type="button" value="x" onclick="calc.cal.value += '*'"></td>
+   <td><input style="width:100%" type="button" value="√" onmousedown="r()"></td>
 </tr>
 <tr>
-	<td><input type="button" value="0" onclick="calc.cal.value += '0'"></td>   
-    <td><input type="button" value="·" onclick="calc.cal.value += '.'"></td>
-    <td><input type="button" value="C" onclick="del()"></td>
-    <td><input type="button" value="÷" onclick="calc.cal.value += '/'"></td>
-    <td><input type="button" value="Pi" onmousedown="pi()"></td>
+	<td><input style="width:100%" type="button" value="0" onclick="calc.cal.value += '0'"></td>   
+   <td><input style="width:100%" type="button" value="·" onclick="calc.cal.value += '.'"></td>
+   <td><input style="width:100%" type="button" value="C" onclick="del()"></td>
+   <td><input style="width:100%" type="button" value="÷" onclick="calc.cal.value += '/'"></td>
+   <td><input style="width:100%" type="button" value="Pi" onmousedown="pi()"></td>
 </tr>
 </table>
 </form>
