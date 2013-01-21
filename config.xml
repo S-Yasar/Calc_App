@@ -6,18 +6,19 @@
     version   = "0.9.9">
 
 
-<name>Calculator: Beta</name>
+<name>Calculator+</name>
 <preference name="disable-cursor" value="true" />
  <rim:navigation mode="focus"/>
  <feature id="blackberry.ui.dialog"/>
 <icon src="icon.png" width="100px" height="100px" />
 <gap:splash src="loader.gif" />
 <description>
-A simple PhoneGap Build application.
+Description: This application is what it sounds like Calaculator+, is a simple calculator application. I can be used as regularly as your pocket calculator. In addition to a Basic calculator, Calculator+ includes a Basic+ and a Unit Converter.
+Support: Android, Symbian, Blackberry OS, Windows Phone OS
 </description>
 
 <author href="https://example.com" email="you@example.com">
-Samin Yasar
+AppSource
 </author>
 </widget>
 
