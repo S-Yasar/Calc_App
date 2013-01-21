@@ -10,7 +10,7 @@
 <preference name="disable-cursor" value="true" />
  <rim:navigation mode="focus"/>
  <feature id="blackberry.ui.dialog"/>
-<icon src="icon.png" width="100px" height="100px" />
+<icon src="iconf.png" width="100px" height="100px" />
 <gap:splash src="loader.gif" />
 <description>
 Description: This application is what it sounds like Calaculator+, is a simple calculator application. I can be used as regularly as your pocket calculator. In addition to a Basic calculator, Calculator+ includes a Basic+ and a Unit Converter.
